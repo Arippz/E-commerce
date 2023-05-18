@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+:root {
+    --basic-font: 'Montserrat', sans-serif;
+}
+
+
+* {
+    font-family: var(--basic-font);
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    display: flex;
+    background-color: #232323;
+    justify-content: space-around;
+    height: 8vh;
+    padding-top: 15px;
+}
+
+.left-heading {
+    display: flex;
+    font-size: 25px;
+    justify-content: space-between;
+    
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 30%;
+    font-size: 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    background: #232323;
+    color: #EDEDED;
+    width: 100%;
+}
+
+.footer .container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+}
+
+.footer ul {
+
+    list-style-type: none;
+    padding: 10px 0 20px 0;
+    gap: 25px;
+}
+
+.footer .container .row .footer-col ul li a {
+    text-decoration: none;
+    color: #EDEDED;
+}
+
+.footer ul li #img1 {
+    position: absolute;
+    bottom: 16px;
+}
+
+.footer ul li #img2 {
+    position: absolute;
+    bottom: 16px;
+}
+
+/* testing */
+
+/* .footer {
+    position: fixed;
+    bottom: 0;
+    background: #232323;
+    color: #EDEDED;
+    width: 100%;
+}
+
+
+.footer .recommended-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer .bottom-footer ul {
+    display: flex;
+} */
