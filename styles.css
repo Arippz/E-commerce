@@ -43,5 +43,51 @@ a {
   color: black;
   display: flex;
   font-family: var(--scnd-font);
+  height: 20px;
   justify-content: space-evenly;
+}
+
+.cartlogo {
+  height: 40px;
+  position: relative;
+  bottom: 15px;
+}
+
+
+/*~~~~~~~~~~~~~content 1~~~~~~~~~~~~~~~~~~~*/
+
+content {
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  margin: 131px 0px 0px 20px;
+}
+
+
+.content-container .right-side {
+  padding: 0px 0px 0px 40px;
+  margin-top: 7%;
+  max-width: 700px;
+}
+
+.content-container img {
+  width: 493px;
+  height: 888px;
+}
+
+.content-container .right-side h1 {
+  padding-bottom: 20px;
+}
+
+.content-container .right-side h1::after {
+  content: '';
+  border: solid;
+  border-color: red;
+  border-radius: 0px 100px 100px 0px;
+  width: 15%;
+  position: absolute;
+  display: block;
+  margin-top: 1px;
 }
