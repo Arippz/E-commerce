@@ -1,4 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@500;600&display=swap");
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
 :root {
-  --clr-prime: "amongus";
-  --clr-sec: "waduh";
+  --title-font: "Montserrat", sans-serif;
+  --scnd-font: "Raleway", sans-serif;
+}
+.titlebar {
+  font-size: 3rem;
+  font-weight: 600;
+}
+.navlogo {
+  height: 50px;
+  position: relative;
+  margin-right: 20px;
+}
+
+.navbar {
+  margin-top: 15px;
+  font-family: var(--title-font);
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 5px black solid;
+  align-items: center;
+}
+.logos {
+  margin-left: 20px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.navul {
+  width: 500px;
+  font-size: 20px;
+  color: black;
+  display: flex;
+  font-family: var(--scnd-font);
+  justify-content: space-evenly;
 }
