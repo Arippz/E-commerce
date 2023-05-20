@@ -50,6 +50,7 @@ a {
 #cartlogo {
   height: 40px;
   cursor: pointer;
+  transition: all 500ms ease-in-out;
   position: relative;
   bottom: 15px;
 }
@@ -153,4 +154,12 @@ a {
   text-decoration: none;
   padding: 12px 26px 12px 26px;
   background-color: black;
+}
+
+#cartlogo.cow {
+  transition: 500ms all ease-in-out;
+  padding-inline: 10px;
+  padding-inline-end: 11px;
+  height: 43px;
+  border: black 2px solid;
 }
