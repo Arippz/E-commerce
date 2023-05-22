@@ -125,7 +125,15 @@ a {
 .card {
   height: 800px;
   font-family: var(--scnd-font);
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 1.34%, rgba(0, 0, 0, 0.76) 21.39%, rgba(0, 0, 0, 0.902222) 37.54%, #000000 48.64%, rgba(0, 0, 0, 0.813316) 82.69%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 1.34%,
+    rgba(0, 0, 0, 0.76) 21.39%,
+    rgba(0, 0, 0, 0.902222) 37.54%,
+    #000000 48.64%,
+    rgba(0, 0, 0, 0.813316) 82.69%,
+    rgba(0, 0, 0, 0) 100%
+  );
   z-index: -10000000000;
 }
 
@@ -215,9 +223,14 @@ a {
   width: 600px;
   text-align: center;
   padding-top: 5px;
+  font-weight: 700;
   font-family: var(--scnd-font);
 }
-
+.paragraf-categories {
+  font-weight: 700;
+  font-size: 30px;
+  color: white;
+}
 .categories {
   margin-top: 40px;
   justify-content: center;
@@ -225,9 +238,6 @@ a {
   grid-template-columns: repeat(2, 509px);
   gap: 20px;
   font-family: var(--title-font);
-  font-size: 30px;
-  color: white;
-  -webkit-text-stroke: 1px black;
 }
 
 .categories-container {
@@ -235,37 +245,32 @@ a {
   place-items: center;
   width: 500px;
   height: 200px;
-  box-shadow: 0px 4px 22px 6px rgba(0, 0, 0, 0.40);
+  box-shadow: 0px 4px 22px 6px rgba(0, 0, 0, 0.4);
 }
 
 .shoes {
-  background-image: url('/img/shoe.jpeg');
+  background-image: url("/img/shoe.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .t-shirts {
-  background-image: url('img/t-shirt\ categories.jpg');
+  background-image: url("img/t-shirt\ categories.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .bags {
-  background-image: url('img/categories\ bag.jpg');
+  background-image: url("img/categories\ bag.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
 
 .accesories {
-  background-image: url('img/categories\ accessories.jpg');
+  background-image: url("img/categories\ accessories.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  
 }
-
 
 .image-categories {
   width: 500px;
@@ -289,6 +294,8 @@ a {
   font-family: var(--scnd-font);
   display: block;
   position: absolute;
+  transition: all 1s ease-out;
+  animation: Fadeout 1s;
   padding: 2rem;
 }
 .minicart-items.show {
@@ -300,6 +307,14 @@ a {
   margin: 0em 0em 2em 0em;
 }
 
+@keyframes Fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @keyframes Fadein {
   from {
     opacity: 0;
