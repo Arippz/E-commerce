@@ -26,6 +26,8 @@ function updateCartTotal() {
   console.log(cartRows);
   for (let y = 0; y < cartRows.length; y++) {
     const cartrow = cartRows[y];
-    var priceElement = cartrow.getElementsByClassName("cart-price")[0];
+    var priceElement = cartrow.getElementsByClassName("price")[0];
+    var quantityElement = cartrow.getElementsByClassName("cart")[0];
+    console.log(quantityElement);
   }
 }
