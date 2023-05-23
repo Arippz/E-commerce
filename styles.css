@@ -377,38 +377,6 @@ a {
   border: black 2px solid;
 }
 
-<<<<<<< HEAD
-.product-item {
-  display: flex;
-  align-items: center;
-  align-self: self-start;
-}
-.product-item > :first-child {
-  margin-right: 20px;
-}
-.cart-buttonsz {
-  display: flex;
-}
-.cart-buttonsz > * {
-  margin-inline: 5px;
-}
-.cart-buttonsz input {
-  width: 30px;
-}
-
-.remove-item {
-  color: white;
-  border: none;
-  cursor: pointer;
-  background-color: red;
-  font-style: var(--scnd-font);
-  font-weight: 700;
-  padding: 5px;
-}
-
-/* Cart */
-=======
-
 /* ~~~~~~~~~~~~~~~~~~~Cat-shoes~~~~~~~~~~~~~~~~~~~~~ */
 
 .cat-header {
@@ -429,9 +397,13 @@ a {
   padding-top: 90px;
 }
 
-
 .background-header-bags {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-bags.jpg);
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(img/cat-bags.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 304px;
@@ -440,7 +412,12 @@ a {
 }
 
 .background-header-tshirts {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-thirts.jpg);
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(img/cat-thirts.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 304px;
@@ -449,15 +426,18 @@ a {
 }
 
 .background-header-accesories {
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-accesories.jpg);
+  background: linear-gradient(
+      360deg,
+      rgba(0, 0, 0, 0.8) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(img/cat-accesories.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   height: 304px;
   width: 1440px;
   padding-top: 90px;
 }
-
-
 
 .cat-card {
   display: grid;
@@ -467,7 +447,6 @@ a {
   margin-top: 60px;
   gap: 70px;
 }
-
 
 .image-gradient {
   position: relative;
@@ -493,16 +472,22 @@ a {
   opacity: 0;
   z-index: 1;
 }
-#Add{
+#Add {
   cursor: pointer;
 }
 
 .image-gradient:hover::after {
-  content: '';
+  content: "";
   position: absolute;
-  left: 0; top: 0;
-  width: 100%; height: 100%;
-  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    360deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 .cat-card-container .image-gradient:hover button {
@@ -510,7 +495,6 @@ a {
   font-size: 70px;
   color: white;
 }
-
 
 .cat-bottom {
   background-color: white;
@@ -530,4 +514,3 @@ a {
 .left-side {
   float: left;
 }
->>>>>>> main
