@@ -377,6 +377,36 @@ a {
   border: black 2px solid;
 }
 
+.product-item {
+  display: flex;
+  align-items: center;
+  align-self: self-start;
+}
+.product-item > :first-child {
+  margin-right: 20px;
+}
+.cart-buttonsz {
+  display: flex;
+}
+.cart-buttonsz > * {
+  margin-inline: 5px;
+}
+.cart-buttonsz input {
+  width: 30px;
+}
+
+.remove-item {
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+  font-style: var(--scnd-font);
+  font-weight: 700;
+  padding: 5px;
+}
+
+/* Cart */
+
 /* ~~~~~~~~~~~~~~~~~~~Cat-shoes~~~~~~~~~~~~~~~~~~~~~ */
 
 .cat-header {
