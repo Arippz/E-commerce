@@ -9,6 +9,7 @@ function visi() {
 var removeCartItemButtons = document.getElementsByTagName("button");
 console.log(removeCartItemButtons);
 console.log(removeCartItemButtons.length);
+console.log("whoa");
 for (let i = 0; i < removeCartItemButtons.length; i++) {
   const rembutton = removeCartItemButtons[i];
   rembutton.addEventListener("click", (event) => {
