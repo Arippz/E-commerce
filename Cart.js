@@ -5,3 +5,26 @@ function visi() {
   popupc.classList.toggle("cow");
   console.log("no");
 }
+
+var removeCartItemButtons = document.getElementsByTagName("button");
+console.log(removeCartItemButtons);
+console.log(removeCartItemButtons.length);
+for (let i = 0; i < removeCartItemButtons.length; i++) {
+  const rembutton = removeCartItemButtons[i];
+  rembutton.addEventListener("click", (event) => {
+    var buttonClicked = event.target;
+    buttonClicked.parentElement.parentElement.remove();
+    updateCartTotal();
+  });
+}
+
+function updateCartTotal() {
+  var cartItemsContainer = document.getElementsByClassName("minicart-items")[0];
+  console.log(cartItemsContainer);
+  var cartRows = cartItemsContainer.getElementsByClassName("cart-row");
+  console.log(cartRows);
+  for (let y = 0; y < cartRows.length; y++) {
+    const cartrow = cartRows[y];
+    var priceElement = cartrow.getElementsByClassName("cart-price")[0];
+  }
+}

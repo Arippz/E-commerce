@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alef</title>
-    <script src="/Cart.js"></script>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
@@ -27,24 +26,42 @@
     </nav>
     <div class="minicart-items container" id="pop">
       <div class="cart-row cart-titles">
-        <h3 class="cart-column">Product</h3>
-        <h3 class="cart-column">Name</h3>
+        <h3 class="cart-column product-item">Product</h3>
         <h3 class="cart-column">Price</h3>
+        <h3 class="cart-column">Quantity</h3>
       </div>
       <div class="cart-row">
-        <img src="/img/saaaa.jpg" alt="" class="cart-img cart-column" />
-        <p class="productname cart-column">Alt-Red</p>
+        <div class="product-item">
+          <img src="/img/saaaa.jpg" alt="" class="cart-img" />
+          <p class="productname">Alt-Red</p>
+        </div>
         <p class="price cart-column">$29.99</p>
+        <div class="cart-buttonsz">
+          <input type="number" name="item-quantity" id="item-quantity" />
+          <button class="remove-item" id="remove-item">REMOVE</button>
+        </div>
       </div>
       <div class="cart-row">
-        <img src="/img/INter.jpg" alt="" class="cart-img cart-column" />
-        <p class="productname cart-column">70-Yunika</p>
+        <div class="product-item">
+          <img src="/img/INter.jpg" alt="" class="cart-img" />
+          <p class="productname">70-Yunika</p>
+        </div>
         <p class="price cart-column">$15.50</p>
+        <div class="cart-buttonsz">
+          <input type="number" name="item-quantity" id="item-quantity" />
+          <button class="remove-item" id="remove-item">REMOVE</button>
+        </div>
       </div>
       <div class="cart-row">
-        <img src="/img/saaaa.jpg" alt="" class="cart-img cart-column" />
-        <p class="productname cart-column">Alt-Red</p>
+        <div class="product-item">
+          <img src="/img/saaaa.jpg" alt="" class="cart-img" />
+          <p class="productname">Alt-Red</p>
+        </div>
         <p class="price cart-column">$29.99</p>
+        <div class="cart-buttonsz">
+          <input type="number" name="item-quantity" id="item-quantity" />
+          <button class="remove-item" id="remove-item">REMOVE</button>
+        </div>
       </div>
       <div class="minicart-footer">
         <div class="Tprice">
@@ -150,5 +167,8 @@
         <a href="#" class="paragraf-categories">Accesories</a>
       </div>
     </div>
+
+    <!-- kasi spasi gede sebelum script js ini! -->
+    <script src="/Cart.js" async></script>
   </body>
 </html>
