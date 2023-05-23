@@ -312,6 +312,7 @@ a {
 .minicart-items.show {
   visibility: visible;
   animation: Fadein 2s both;
+  z-index: 1;
 }
 .minicart-items > :not(:last-child) {
   border-bottom: 2px black solid;
@@ -376,6 +377,7 @@ a {
   border: black 2px solid;
 }
 
+<<<<<<< HEAD
 .product-item {
   display: flex;
   align-items: center;
@@ -405,3 +407,127 @@ a {
 }
 
 /* Cart */
+=======
+
+/* ~~~~~~~~~~~~~~~~~~~Cat-shoes~~~~~~~~~~~~~~~~~~~~~ */
+
+.cat-header {
+  display: grid;
+  justify-content: center;
+  color: white;
+  font-family: var(--title-font);
+  font-size: 64px;
+  text-align: center;
+}
+
+.background-header-shoes {
+  background-image: url(img/Rectangle\ 45.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 304px;
+  width: 1440px;
+  padding-top: 90px;
+}
+
+
+.background-header-bags {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-bags.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 304px;
+  width: 1440px;
+  padding-top: 90px;
+}
+
+.background-header-tshirts {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-thirts.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 304px;
+  width: 1440px;
+  padding-top: 90px;
+}
+
+.background-header-accesories {
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%), url(img/cat-accesories.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 304px;
+  width: 1440px;
+  padding-top: 90px;
+}
+
+
+
+.cat-card {
+  display: grid;
+  grid-template-columns: repeat(2, 530px);
+  place-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 70px;
+}
+
+
+.image-gradient {
+  position: relative;
+  overflow: hidden;
+}
+.cat-card-container img {
+  transition: 1s all;
+  width: 520px;
+}
+
+.cat-card-container .image-gradient:hover img {
+  transform: scale(1.2);
+  transition: ease-out 1s;
+}
+
+.cat-card-container .image-gradient button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: none;
+  border: none;
+  opacity: 0;
+  z-index: 1;
+}
+#Add{
+  cursor: pointer;
+}
+
+.image-gradient:hover::after {
+  content: '';
+  position: absolute;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.cat-card-container .image-gradient:hover button {
+  opacity: 1;
+  font-size: 70px;
+  color: white;
+}
+
+
+.cat-bottom {
+  background-color: white;
+  border: 3px solid black;
+  border-top: 0;
+  height: 50px;
+  position: relative;
+  top: -5px;
+  padding: 10px;
+  font-family: var(--scnd-font);
+}
+
+.right-side {
+  float: right;
+}
+
+.left-side {
+  float: left;
+}
+>>>>>>> main
