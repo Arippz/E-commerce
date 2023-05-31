@@ -116,7 +116,7 @@ a {
   text-align: justify;
   position: relative;
   left: 60px;
-  margin-top: 17px;
+  margin-top: 60px;
 }
 
 .content-container .right-side .paragraf-bottom #p1 {
@@ -128,6 +128,12 @@ a {
   position: relative;
   left: 160px;
   padding-top: 20px;
+}
+
+.content-container .right-side .paragraf-footer {
+  text-align: center;
+  margin-top: 100px;
+  margin-right: 65px;
 }
 
 .card {
