@@ -15,7 +15,7 @@ function ready() {
     const rembutton = removeCartItemButtons[i];
     rembutton.addEventListener("click", removeCartItem);
   }
-  var addToCartButtton = document.getElementsByClassName("shop-item-button");
+  var addToCartButtton = document.getElementsByClassName("s-i-b");
   console.log(addToCartButtton.length);
   for (let i = 0; i < addToCartButtton.length; i++) {
     const button = addToCartButtton[i];
@@ -63,9 +63,9 @@ function addToCartClicked(event) {
   console.log("ooomaga");
   var button = event.target;
   var shopItem = button.parentElement.parentElement;
-  var title = shopItem.getElementsByClassName("title-card-column")[0].innerText;
-  var price = shopItem.getElementsByClassName("price-card-column")[0].innerText;
-  var imageSrc = shopItem.getElementsByClassName("shop-item-image")[0].src;
+  var title = shopItem.getElementsByClassName("s-i-t")[0].innerText;
+  var price = shopItem.getElementsByClassName("s-i-p")[0].innerText;
+  var imageSrc = shopItem.getElementsByClassName("s-i-img")[0].src;
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
   console.log(title);
