@@ -308,9 +308,9 @@ a {
   position: absolute;
   border-radius: 25px;
   background-color: #eeecec;
-  left: 55%;
+  left: 35%;
   top: 15%;
-  width: 45%;
+  width: 65%;
   visibility: hidden;
   padding: 2rem;
   border: 5px black solid;
@@ -319,6 +319,8 @@ a {
   animation: Fadeout 1s;
 }
 .cart-itemsz {
+  display: flex;
+  flex-direction: column;
   justify-content: space-between;
   padding-top: 0;
 }
@@ -350,10 +352,13 @@ a {
 }
 .cart-row {
   font-size: 20px;
-  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
+  padding-top: 1rem;
   align-items: center;
+}
+.cart-row > :nth-child(2) {
+  width: 50px;
 }
 
 .cart-column {
@@ -417,7 +422,6 @@ a {
   font-weight: 700;
   padding: 5px;
 }
-
 /* Cart */
 
 /* ~~~~~~~~~~~~~~~~~~~Cat-shoes~~~~~~~~~~~~~~~~~~~~~ */

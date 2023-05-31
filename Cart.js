@@ -1,3 +1,4 @@
+updateCartTotal();
 if (document.readyState == "loading") {
   document.addEventListener("DOMContentLoaded", ready);
 } else {
@@ -42,6 +43,7 @@ function removeCartItem(event) {
   var buttonClicked = event.target;
   buttonClicked.parentElement.parentElement.remove();
   updateCartTotal();
+  updateCartTotal();
 }
 
 function updateCartTotal() {
@@ -85,7 +87,6 @@ function addItemToCart(title, price, imageSrc) {
     }
   }
   var cartRowContents = `
-        <div class="cart-row">
           <div class="product-item">
             <img class="cart-img" src="${imageSrc}" />
             <p class="productname">${title}</p>
@@ -100,7 +101,6 @@ function addItemToCart(title, price, imageSrc) {
               value="1" />
             <button class="remove-item" id="remove-item">REMOVE</button>
           </div>
-        </div>
 
 `;
   cartRow.innerHTML = cartRowContents;
