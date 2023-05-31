@@ -314,16 +314,13 @@ a {
   visibility: hidden;
   padding: 2rem;
   border: 5px black solid;
-}
-.cart-itemsz .product-item {
-  flex-basis: 37%;
-}
-.cartz-items {
-  flex-wrap: wrap;
-  padding-top: 0;
   font-family: var(--scnd-font);
   transition: all 1s ease-out;
   animation: Fadeout 1s;
+}
+.cart-itemsz {
+  justify-content: space-between;
+  padding-top: 0;
 }
 .minicart-items.show {
   visibility: visible;

@@ -53,6 +53,7 @@ function updateCartTotal() {
     var priceElement = cartrow.getElementsByClassName("price")[0];
     var quantityElement = cartrow.getElementsByClassName("item-quantity")[0];
     var totprice = parseFloat(priceElement.innerText.replace("$", ""));
+    console.log(totprice);
     var totval = quantityElement.value;
     total = total + totval * totprice;
   }
@@ -65,6 +66,7 @@ function addToCartClicked(event) {
   var shopItem = button.parentElement.parentElement;
   var title = shopItem.getElementsByClassName("s-i-t")[0].innerText;
   var price = shopItem.getElementsByClassName("s-i-p")[0].innerText;
+  console.log(price);
   var imageSrc = shopItem.getElementsByClassName("s-i-img")[0].src;
   addItemToCart(title, price, imageSrc);
   updateCartTotal();
@@ -84,21 +86,21 @@ function addItemToCart(title, price, imageSrc) {
   }
   var cartRowContents = `
         <div class="cart-row">
-        <div class="product-item">
-          <img class="cart-img" src="${imageSrc}" />
-          <p class="productname">${title}</p>
+          <div class="product-item">
+            <img class="cart-img" src="${imageSrc}" />
+            <p class="productname">${title}</p>
+          </div>
+          <p class="price cart-column">${price}</p>
+          <div class="cart-buttonsz">
+            <input
+              type="number"
+              name="item-quantity"
+              id="item-quantity"
+              class="item-quantity"
+              value="1" />
+            <button class="remove-item" id="remove-item">REMOVE</button>
+          </div>
         </div>
-        <p class="price cart-column">${price}</p>
-        <div class="cart-buttonsz">
-          <input
-            type="number"
-            name="item-quantity"
-            id="item-quantity"
-            class="item-quantity"
-            value="1" />
-          <button class="remove-item" id="remove-item">REMOVE</button>
-        </div>
-      </div>
 
 `;
   cartRow.innerHTML = cartRowContents;
